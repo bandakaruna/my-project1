@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Veegam Blog</title>
+        <style>
+        *{
+           margin: 0px;
+           padding: 0px;
+           font-family: poppins;
+           box-sizing: border-box;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: poppins;
+        }
+        header {
+      background-color: #d2cee2;
+      padding: 10px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .nav-links li{
+ 	margin: 0 30px;
+	color: black;
+    }
+     a{
+      text-decoration: none;
+      color: #333;
+     }
+        #blog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .blog-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .blog-heading span{
+            color:black;
+
+        }
+        .blog-heading h3{
+            font-size: 2.4rem;
+            color: #2b2b2b;
+            font-weight: 600;
+        }
+        .blog-container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            flex-wrap: wrap;
+        }
+        .blog-box{
+            width: 350px;
+            background-color: #ffffff;
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+        .blog-img{
+            width: 100%;
+            height: auto;
+        }
+        .blog-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .blog-text{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-text span{
+            color:black;
+            font-size: 0.9rem;
+        }
+        .blog-text .blog-title{
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #272727;
+        }
+        .blog-text .blog-title:hover{
+            color:blue;
+            transition: all ease 0.3s;
+        }
+        .blog-text p{
+            color: #9b9b9b;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 20px 0px;
+        }
+        .blog-text a{
+            color: #0f0f0f;
+        }
+        .blog-text a:hover{
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+        @media(max-width:1250px) {
+            .blog-box{
+                width: 300px;
+            }
+        }
+        @media(max-width:1100px){
+            .blog-box{
+                width: 70%;
+            }
+        }
+        @media(max-width:550px){
+            .blog-box{
+                margin:20px 10px;
+                width: 100%;
+            }
+            #blog{
+                padding: 20px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+              <a href="home.html">Home</a>
+              <a href="services.html">Services</a>
+              <a href="digital marketing.html">Digital Marketing</a>
+              <a href="trainings.html">Trainings</a>
+              <a href="clients.html">Clients</a>
+              <a href="blog.html">Blog</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact Us</a>
+            </nav>
+          </header>
+          <section id="blog">
+            <div class="blog-heading">
+                <span>Our Blogs</span>
+                <h3>Blog</h3>
+            </div>
+            <div class="blog-container">
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="./images/blog1.png" alt="blog">
+                    </div>
+                    <div class="blog-text">
+                        <span>21 december 2023</span>
+                        <a href="#" class="blog-title">What is AI and how AI can be used?</a>
+                        <p>Artificial Intelligence (AI) is a discipline within computer science focused on creating intelligent machines that can perform tasks typically associated with human intelligence. </p>
+                        <p>Read more....</p>
+                    </div>
+                </div>
+                <div class="blog-container">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="./images/blog2.png" alt="blog">
+                        </div>
+                        <div class="blog-text">
+                            <span>19 december 2023</span>
+                            <a href="#" class="blog-title">What is Google Gemini?</a>
+                            <p> Google Gemini is a new, powerful generative AI model developed by Google AI. Its still under active development, but its already being hailed as a significant advancement in the field of AI.</p>
+                            <p>Read more....</p>
+                        </div>
+                    </div>
+                    <div class="blog-container">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./images/blog3.png" alt="blog">
+                            </div>
+                            <div class="blog-text">
+                                <span>21 december 2023</span>
+                                <a href="#" class="blog-title">Where we can use ML?</a>
+                                <p>Machine Learning (ML) is a versatile technology that can be applied in various domains and industries. Here are some common areas where ML is frequently used: </p>
+                                <p>Read more....</p>
+                            </div>
+                        </div>
+            </div>
+          </section>
+          
+          
+    
+    </body>
+</html>
